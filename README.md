@@ -11,7 +11,8 @@ ride.
 
 Platform which tracks user's activities over a period of time and try to learn his travel schedule. In India people usually leave for office between 8:00-10:00 am and returns home between 5:00 – 7:00 pm. So at 8:00 am application knows that its time for the user to go to office and should be notified about other users who might be traveling on his route which can be his colleagues, or people working in nearby offices. 
 
-![Screenshot](Screen Shot 2018-03-16 at 2.25.47 PM.png)
+![Representation](https://drive.google.com/open?id=1z9DfvkD52nBeiDjL1Ivjikj_u4BK4jwv)
+
 
 When a user or commuter is found on the same route,profile(facebook,linkedIn, twitter etc.) of the commuter is shown to the rider and vice-versa and both of them can chat with each other, it kills the awkwardness and both the commuters can trust each other better.
 
