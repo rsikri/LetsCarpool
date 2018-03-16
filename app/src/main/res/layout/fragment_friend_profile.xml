@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fl_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/ll_profile_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@drawable/shape_profile_form"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="Username"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/et_profile_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="false"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_name"
+                                android:background="@drawable/selector_profile_edit_text"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="16sp"
+                                tools:text="Rohan Sharma" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/dividerColor" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="Phone Number"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/et_profile_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toEndOf="@+id/tv_phone"
+                                android:layout_toRightOf="@+id/tv_phone"
+                                android:background="@drawable/selector_profile_edit_text"
+                                android:gravity="right"
+                                android:inputType="phone"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:maxLength="10"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/dividerColor" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_gender"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="Gender"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/et_gender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_gender"
+                                android:background="@drawable/selector_profile_edit_text"
+                                android:gravity="right"
+                                android:enabled="false"
+                                android:inputType="textEmailAddress"
+                                android:minWidth="40dp"
+                                android:padding="5dp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="16sp"
+                                tools:text="Male" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView_car_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@drawable/shape_profile_form"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_below="@+id/cardView_profile">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_car_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="Car Plate Number"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/et_car_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="false"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_car_number"
+                                android:background="@drawable/selector_profile_edit_text"
+                                android:gravity="right"
+                                android:padding="5dp"
+                                android:enabled="false"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/dividerColor" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_car_model"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="Car Model"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/et_car_model"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="5dp"
+                                android:layout_toEndOf="@+id/tv_car_model"
+                                android:layout_toRightOf="@+id/tv_car_model"
+                                android:background="@drawable/selector_profile_edit_text"
+                                android:gravity="right"
+                                android:enabled="false"
+                                android:padding="10dp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/dividerColor" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_uber_car_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/uber_car_type_bg">
+
+                            <TextView
+                                android:id="@+id/car_mileage_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:textSize="12sp"
+                                android:textColor="@color/uber_car_type"
+                                android:layout_marginLeft="10dp"
+                                android:text="8-10 Km/L" />
+
+                            <TextView
+                                android:id="@+id/car_mileage_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="@color/uber_car_type"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:text="15-20 Km/L" />
+
+                            <TextView
+                                android:id="@+id/car_mileage_3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_marginTop="9dp"
+                                android:textColor="@color/uber_car_type"
+                                android:layout_marginRight="15dp"
+                                android:layout_alignParentRight="true"
+                                android:text="Above 20 Km/L" />
+
+                            <SeekBar
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:thumb="@drawable/uber_car"
+                                android:progress="5"
+                                android:enabled="false"
+                                android:progressDrawable="@drawable/uber_seekbar_strip"
+                                android:layout_marginBottom="10dp"
+                                android:id="@+id/car_mileage"
+                                android:layout_below="@+id/car_mileage_1"
+                                android:layout_marginTop="10dp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView_travel_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:background="@drawable/shape_profile_form"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_below="@+id/cardView_car_profile">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_home_address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:gravity="center"
+                                android:text="Home Address"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:textStyle="normal" />
+
+                            <EditText
+                                android:id="@+id/et_home_add"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="false"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/tv_home_address"
+                                android:background="@drawable/selector_profile_edit_text"
+                                android:gravity="right"
+                                android:enabled="false"
+                                android:editable="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:padding="5dp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/dividerColor" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/tv_office_add"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="Office Address"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/et_office_add"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="5dp"
+                                android:editable="false"
+                                android:layout_toEndOf="@+id/tv_office_add"
+                                android:layout_toRightOf="@+id/tv_office_add"
+                                android:background="@drawable/selector_profile_edit_text"
+                                android:gravity="right"
+                                android:enabled="false"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:padding="5dp"
+                                android:textColor="@color/textColorSecondary"
+                                android:textSize="16sp"/>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/dividerColor" />
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <Button
+                    android:id="@+id/btn_save_profile"
+                    android:layout_below="@+id/cardView_travel_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="#000000"
+                    android:textColor="#ffffff"
+                    android:text="CHAT"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+    </ScrollView>
+</RelativeLayout>
+

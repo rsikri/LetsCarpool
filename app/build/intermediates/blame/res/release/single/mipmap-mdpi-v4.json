@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/sarthakmeh/Documents/Android/A_PROJECTS/ShareYourRide/app/build/intermediates/res/merged/release/mipmap-mdpi-v4/bg.png",
+        "source": "/home/sarthakmeh/Documents/Android/A_PROJECTS/ShareYourRide/app/src/main/res/mipmap-mdpi/bg.png"
+    },
+    {
+        "merged": "/home/sarthakmeh/Documents/Android/A_PROJECTS/ShareYourRide/app/build/intermediates/res/merged/release/mipmap-mdpi-v4/ic_launcher.png",
+        "source": "/home/sarthakmeh/Documents/Android/A_PROJECTS/ShareYourRide/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]

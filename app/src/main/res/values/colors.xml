@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorAccent">#ff1355</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#727272</color>
+    <color name="dividerColor">#B6B6B6</color>
+    <color name="bgColor">#f2f2f2</color>
+    <color name="tabTxtColor">#999999</color>
+    <color name="loginTxtColor">#fff7f8</color>
+    <color name="requestChildColor">#e3e2e1</color>
+    <color name="editTextHintColor">#cccccc</color>
+    <color name="uber_car_type_bg">#f4f2f5</color>
+    <color name="uber_car_type">#333333</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_black">#000000</color>
+    <color name="light_gray">#d3d3d3</color>
+    <color name="toolbar_bg">#ff3c3f</color>
+    <color name="darkslateblue">#483D8B</color>
+
+</resources>
