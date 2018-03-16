@@ -26,3 +26,5 @@ and more users will be inclined to use the app.
 Locate on Map feature makes it easy to locate exactly where the rider is. A commuter can easily see
 the exact position of the rider and what route did he traveled while going to the office/home.
 
+[Use Case](https://drive.google.com/open?id=1sehi4iARR0CJMLJadG9CvD3bFM-x5q6L)
+[Activity Diagram](https://drive.google.com/open?id=17o5rL5S1BCZpI5N4y86q7BR4xS90OgaB)
